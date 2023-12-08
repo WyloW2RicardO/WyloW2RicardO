@@ -1,0 +1,282 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{ae,lmodern}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[babel=true]{csquotes}
+\author{RICHARD Wilfried}
+\title{Python}
+\date{2023-11-28}
+\makeatletter
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\subsection{Texte}
+		\subsubsection{Préfix}
+			\textit{R} ou \textit{r} : chaines brutes, traitent la barre oblique inversée comme un caractère normal\\
+			\textit{F} ou \textit{f} : littérale formatée ; \{\} peuvent contenir des champs à remplacer
+		\subsubsection{Argument}
+			\textit{\textbackslash n} : saut de ligne ;\\
+			\textit{\textbackslash r} : retour chariot ;\\
+			\textit{\textbackslash t} : tabulation ;\\
+			\textit{'''texte'''} ou \textit{"""texte""" }: Les retours à la ligne sont automatiquement inclus, mais on peut l'empêcher en ajoutant \ à la fin de la ligne
+		\subsubsection{Operateur}
+			\textit{str(ojt)} : Renvoie une représentation en chaîne de caractères de object
+		\subsubsection{Classes}
+			\textit{text.capitalize()} : son premier caractère en majuscule et le reste en minuscule\\
+			\textit{text.title()} : les mots commencent par une capitale\\
+			\textit{text.split([sep=None, maxsplit=- 1])} : liste des mots de la chaîne, en utilisant sep comme séparateur de mots, maxsplit est le nombre maximum de divisions.\\
+			\textit{text.substitute(mapping={}, /, **clef)}\\
+			\textit{text.strip([chars])} : Renvoie une copie de la chaîne dont des caractères initiaux et finaux sont supprimés\\
+			\textit{f'{}'.format(*args, **kwargs)} : 
+				https://peps.python.org/pep-3101/, 
+				https://docs.python.org/fr/3/library/string.html\#formatstrings\\
+			\textit{text.uper()} : mettre en majuscule une chaine de caractères
+	\subsection{Calculatrice}
+		\subsubsection{Operation}
+			\textit{+} ; Adition\\
+			\textit{-} ; Soustraction\\
+			\textit{/} ; Divition\\
+			\textit{//} ; Division Euclidienne\\
+			\textit{\%} ; Reste\\
+			\textit{**} ; Puissance
+
+Nombres
+	Type
+		int : nombre entier ;
+		float : décimaux ;
+		bool : bouléin ;
+	Indexation
+		* : etoile ;
+		\_ : Atrap-tout ; la dernière expression affichée
+	Operateur
+		+,-,*,/,**,//
+		int(float) : nombres entiers ;
+		round()
+	Comparateur
+		<,>,<=,>=,==,!=
+Iterable
+	Type
+		n-uplt ou tuple
+		list
+	Opérateurs
+		\^ : diference
+		\& : intersection
+		| : union
+	Indexation
+		liste[nombre] : pour lire le n ieme nombre de la sequance
+		liste[debut:fin] : pour lire l'inteval de n1-n0 commence en n0 et fini en n1
+	Operateur
+		len(tuple) : renvoie la longueur
+		list(tuple) : transforme en liste
+		rang() : occupe toujours la même (petite) quantité de mémoire
+			rang(fin) : itérer sur une suite de nombres, elle commance a 0 et fini fin-1
+			rang(debut:fin) : itérer sur une suite de nombres, elle commance a debut et fini fin-1
+			rang(debut:fin,etpe) : itérer sur une suite de nombres, elle commance a debut et fini fin-1 par etap
+		reversed(list) : Inverse l'ordre des éléments dans la liste.
+		set(list) : élimine les doublons
+		sum(list[,start]) : Additionne les valeurs
+	Classes
+		list.append(var) : sujet+=[var]
+		list.clear() : Supprime tous les éléments
+		list0.extend(list1) : mettre bout à bout deux listes
+		list.insert(nmbr, var) : Insère un élément à la position indiquée.
+		sep.join(list) : transformer une liste en de caractère separer par sep
+		list.pop([nmbr]) : Enlève de la liste l'élément situé à la position indiquée et le renvoie en valeur de retour
+		list.remove(var) : Supprime de la liste le premier élément dont la valeur est égale à var
+Commande
+	Fonction
+		input(text) : faire une demande
+		print() : affichée
+			\%(var) : marque le début du marqueur
+				\# : La conversion utilise la « forme alternative »
+				0 : Les valeurs numériques converties sont complétées de zéros
+			end=',' : pour le metre a la suite
+		round(nmbr) : Arrondi un nombre
+		sorted(iterable,/,*[, key=None, reverse=False]) : Ordonne les éléments dans la sequance
+			key : doit être une fonction (ou autre appelable) qui prend un seul argument et renvoie une clef à utiliser à des fins de tri
+			reverse : pour déterminer l'ordre descendant des tris
+	Classes : dictionaire de fonction
+		sujet.copy() : Renvoie une copie superficielle
+		sujet.count(var[, start[, end]]) : Renvoie le nombre d'éléments ayant la valeur var dans la liste.
+		sujet.find(var[,debut[, fin]]) : donne la position et -1 si il n'est pas dedans
+		sujet.isnan()
+	Instruction
+		as : capturer la valeur d'une partie d'un filtre avec le mot-clé
+		break : sort de l’enceinte
+		continue : continuer le flot d'exécution au prochain cycle de la boucle la plus imbriquée
+		del var : Supprime var
+		in ou not in : testent l’appartenance
+		is :
+		pass : ne fait rien, pour fournir une syntaxe correcteboucle if.
+		with :
+		raise :
+	Boucle
+		while : tan que ; 
+		for,else : itère sur les éléments d'une séquence
+		if,elif,else : 
+		math sujet : Filtre, Seul le premier qui correspond est exécuté, elle permet aussi d'extraire dans des variables des composantes de la valeur (afectation),
+		try,except, else,finally : Esayer ; 
+	open(file, mode='r', buffering=- 1, encoding=None, errors=None, newline=None, closefd=True, opener=None) : lire ou écrire qu'un seul fichier
+		Argument
+			file : 
+			mode : spécifier dans quel mode le fichier est ouvert, se combine
+				r : en lecture (par défaut)
+				w : en écriture, en effaçant le contenu du fichier
+				x : pour une création exclusive, échouant si le fichier existe déjà
+				a : en écriture, ajoutant à la fin du fichier s'il existe
+				b : mode binaire
+				t : mode texte
+				+ : ouvre en modification (lecture et écriture)
+		Classes
+			fil.close() :
+			fil.read([taille]) : lit une certaine quantité de données et la renvoie sous forme de chaîne
+			fil.readline() : lit une seule ligne du fichier
+			fil.seek(decalage, origine) : La position est calculée en ajoutant décalage à un point d'origine
+			fil.tell() : renvoie un entier indiquant la position actuelle dans le fichier
+			fil.write(text) : écrit le contenu de chaine dans le fichier et renvoie le nombre de caractères écrits. et la justaposition d'une 
+			https://peps.python.org/pep-0636/
+			case condition : confronte la valeur d'une expression, si il es préfix de \_ il equivaut à else
+			var0 | var1 : combiner plusieurs littéraux en un seul filtre
+			*\_ : filtre qui reconnaît les séquences à plus élément
+Création
+	Argument les arguments nommés doivent suivre les arguments positionnés
+		argmt:type : 
+		argmt=defaut : la valeur par défaut n'est évaluée qu'une seule fois par appel de la fonction
+		*argmt : n-uplet contenant les arguments positionnés au-delà de la liste des paramètres formels, lors de l'appel de fontion *argmt permet de separe la liste
+		**argmt\_der : dictionnaire contenant tous les arguments nommés à l'exception de ceux correspondant à un paramètre formel
+		Spéciaux  il est logique de restreindre la façon dont les arguments peuvent être transmis, peut etre util en cas d'embuiguité
+			argmt, / : restreint le passage aux seuls arguments par position
+			*, argmt : n'autorise que les arguments nommés
+	lambda *\_:fnctn(*\_) : fonction anonyme
+	def nom(*\_) : nouvelle fonction
+		Argument
+			fonction : decorateur ; utilisé avec @
+		Classes
+			nom.\_\_doc\_\_ : la première ligne soit toujours courte et résume de manière concise l'utilité de l'objet
+			nom.\_\_annotations\_\_ : dictionary and have no effect on any other part of the function
+			return : renvoient une valeur
+	dict(dico,**clef) : Renvoie un nouveau dictionnaire initialisé à partir d'un argument positionnel optionnel, et un ensemble (vide ou non) d'arguments nommés.
+		Annotations
+			https://peps.python.org/pep-0448/
+			https://peps.python.org/pep-0572/
+		Indexation
+			dico[clef] : Renvoie l'élément de dico dont la clé est key
+		Operateur
+			dico0 |= dico1 : Met à jour le dictionnaire dico0 avec les clés et les valeurs de dico1
+			dico.key() : iterable des clef
+			dico.value() : iterable des valeur
+			dico.items() : iterable des clef et des valeur
+			zip(list0,list1) : renvoie un itérateur de n-uplets, où le ie n-uplet contient le ie élément de chacun des itérables passés en arguments, s'arrête lorsque l'itérable le plus court est épuisé
+			iter(dico) : Renvoie un itérateur sur les clés du dictionnaire =zip(dico.values(), d.keys())=[(var1, var0) for (var0, var1) in dico.items()]
+	class :
+		Annotations
+			Les objets peuvent interagir entre eux, regroupe des "méthodes" et des attributs qui définissent un objet
+			utiliser une notation UpperCamelCase
+		Argument
+			sur\_class : 
+		Operateur
+			\_\_match\_arg\_\_(*\_) : prennent en charge le filtrage par arguments positionnels en définissant un ordre des attributs
+			def \_\_missing\_\_(self, clef) : cré les clef si il sont manquant
+			def \_\_init\_\_(self, clef) : self.clef=args ; initialise les clefs
+			@proprerty def clef(self) : return self.clef ; Récupération du nombre
+			@clef.setter def clef(self, args) : self.clef = args ; Changement du nombre
+			def clef(self) : sur\_class.clef(self)
+
+Module
+	sudo apt-get install python-mod : installer le module si il n'y est pas
+	Argument
+		profile : analyser l'execution des fonctions
+		calendar : calendrier ;
+		time : temps ;
+		math : les opérations mathématiques
+		itertools :
+			permutations : liste de tous les cas possibles
+			product : tous les cas possibles d'une liste elle-même composée de liste
+		random : aléatoires ;
+			randint() : Retourne un entier aléatoire
+			random() : Retourne une valeur aléatoir
+			shuffle(list) : Mélange aléatoirement une liste
+		re : expressions régulières ; https://python.doctor/page-expressions-regulieres-regular-python
+		matplotlib : dessine des graphiques ; https://matplotlib.org/
+		tkinter : Interface graphique, https://python.doctor/page-tkinter-interface-graphique-python-tutoriel
+		glob : Recherche d'éléments par motif
+			\_.glob(motif) : Liste les dossiers et les fichiers correspondants au motif
+			\_.iglob(motif) : Idem que glob mais retourne un itérateur
+		sys : fonctions systèmes ; accès à certaines variables utilisées et maintenues par l'interpréteur
+			https://docs.python.org/fr/3/library/sys.html\#sys.builtin\_module\_names
+			\_.argv : liste des arguments de la ligne de commande passés à un script Python
+			\_.path : chemin de recherche de module est accessible à l'adresse
+				\_.insert(0, "chemain") : pour ajouter un dossier
+		os : interagir avec le système d'exploitation
+			\_.path(chem) : Manipuler les chemins
+			\_.listdir(chem) : Lister les fichiers d'un dossier
+			\_.walk(chem, topdown=True, onerror=None, followlinks=False) : afficher tous les éléments d'un dossier ainsi que ses dossiers enfants
+			\_.makedirs(path) : Créer récursivement tous les dossiers d'un path si ceux-ci n'existent pas
+			\_.mkdir(path) : Créer le dernier dossier d'un path. Si un des dossiers n'existe pas une erreur est retournée
+			\_.remove(path) : Supprime le fichier / dossier indiqué
+			\_.rename(old, new) : Renomme le fichier / dossier indiqué
+		lxml : Extensible Markup Language, (langage de balisage extensible en français) ; http://lxml.de/tutorial.html
+		urllib2 : récupérer des informations sur internet
+		cx\_freeze : compiler le code et le rendre exécutable ; https://cx-freeze.readthedocs.io/en/latest/
+	Operateur
+		from mod import fnctn as renom : importé qu’une fois par session de l’interpréteur, si non ajouter ; importlib.reload(mod)
+		if \_\_name\_\_ == "\_\_main\_\_" : utilisable comme script aussi bien que comme module importable
+\section{Envirenement}
+	\subsection{Virtuel}
+		Les applications seront parfois d'avoir besoin d'une version spécifique d'une bibliothèque.La solution à ce problème est de créer un environnement virtuel.\\
+		\textit{python -m venv tutorial-env} : créera le \textit{tutorial-env} répertoire s'il n'existe pas, et crée également des répertoires à l'intérieur contenant une copie du Python interprète et divers fichiers de soutien.\\
+		\textit{tutorial-env\textbackslash Scripts\textbackslash activate} : changer l'invite de votre shell à montrer ce qui environnement virtuel que vous utilisez\\
+		\textit{deactivate} : désactiver un environnement virtuel
+	\subsection{Pip}
+		système de gestion de paquets pour installer et gérer des librairies écrites en Python, 
+		https://pip.pypa.io/en/latest/index.html, 
+		https://pypi.org/\\
+		\textit{sudo apt-get install python-pip} : instalation si besoin
+		\subsubsection{Librairies}
+			\textit{black} : black \{votre\_fichier\} ; formateur de code python, fera gagner beaucoup de temps aussi bien à l'écriture qu' à la lecture\\
+			\textit{django} : cadre web Python de haut niveau qui encourage le développement rapide et une conception propre et pragmatique. https://www.djangoproject.com/\\
+			\textit{virtualenvwrapper} : création d'environement virtuel\\
+			\textit{beautifulsoup4} : html\\
+			\textit{ipdb} ; ipdb.set\_trace() : debeugeur pas par pas
+		\subsubsection{Fonction}
+			\textit{pip freeze} : Affiche toutes les lib installées et leur version\\
+			\textit{pip freeze > lib.txt} : exportez cette liste\\
+			\textit{pip install -r lib.txt} : importez cette liste\\
+			\textit{pip search lib} : recherche une librairie\\
+			\textit{pip show lib} : informations à propos d'un paquet précis\\
+			\textit{pip install lib} : installer une librarie\\
+			\textit{pip list --outdated} : indique quels librairie n'est plus à jour\\
+			\textit{pip install lib --upgrade} : metre a jour\\
+			\textit{pip bundle bund.pybundle -r lib.txt} : zip qui contient toutes les dépendances\\
+			\textit{pip install bund.pybundle} : installer les lib\\
+			\textit{pip uninstall lib} : desinstal
+	\
+	Type
+		py : modifiable
+		pyc : compilé
+		pyw : executé sans lancement de terminal
+	python [-bBdEhiIOqsSuvVWx?] [-c command | -m module-name | script | - ] [args] : lit les lignes de commande et les exécute jusqu'à ce qu'un caractère EOF
+		args :
+			nom de fichier : il lit et exécute le script contenu dans ce fichier
+			répertoire : lit et exécute un script d’un certain nom dans ce répertoire
+		EOF :
+			Ctrl-Z, Enter : caractère fin de fichier
+		
+Style
+	Compréantion
+		list = [f(var) for var in range(nmbr)] : ainsi var n'est pas remplacé et n'existe pas
+		iterateur : apporte un niveau d'abstraction plus élévé
+		générateurs : permettent de créer plus facilement des itérateurs ; yield, similaire au return des fonctions sauf qu'il ne signifie pas la fin de l'exécution de la fonction mais une mise en pause et à la prochaine itération la fonction recherchera le prochain yield
+		packages : le dossier contien un ficher meme vide mais nomé "\_\_init\_\_.py"
+		from pckg import * : dans le fichier "\_\_init\_\_.py" metre \_\_all\_\_ (liste contenant nom de module devant être importés)
+		sou-packages :  from . import mod ; importations relatives
+	Ecriture
+		utilisez des indentations de 4 espaces et pas de tabulation
+		les lignes ne dépassent pas 79 caractères
+		lignes vides pour séparer les fonctions et les classes, ou pour scinder de gros blocs de code à l'intérieur de fonctions
+		placez les commentaires sur leurs propres lignes
+		espaces autour des opérateurs et après les virgules, mais pas juste à l'intérieur des parenthèses : a = f(1, 2) + g(3, 4)
+		Utilisez toujours self comme nom du premier argument des méthodes
+		Prenez l'habitude de nommer votre classe uniquement avec des caractères alphanumériques et commençant par une majuscule. Et à l'inverse l'instance peut être nommée sans majuscule.
+\end{document}

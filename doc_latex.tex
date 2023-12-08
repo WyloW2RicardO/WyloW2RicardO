@@ -1,0 +1,161 @@
+% Un commentaire de le préambule
+\documentclass[a4paper,12pt]{report}
+\usepackage{ae,lmodern}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[babel=true]{csquotes} % csquotes va utiliser la langue définie dans babel
+%\usepackage{biblatex} %Imports biblatex package
+%\addbibresource{sample.bib} %Import the bibliography file
+%\usepackage{hyperref} 
+\makeatletter
+\author{RICHARD Wilfried}
+\title{LaTex}
+\date{2023-11-26} 
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\begin{abstract}
+		Ce document a pour bute d'enumére de décrire les commande \LaTeX de façon tres sucinte sans à avoire à rouvrie le ficher \enquote{.tex}.
+	\end{abstract}
+	\section{Base}
+		\subsection{Code}
+			\textit{\textbackslash textbackslash} : pour ecrire un antislache sur le PDF\\
+			\textit{\%} : pour metre un commantaire dans le code\\
+			\textit{\textbackslash today} : pour afficher la date d'aujourd'hui
+		\subsection{Espacement}
+			\subsubsection{Page}
+				\textit{\textbackslash pagebreak} : encourage un changement de page à cet endroit-là.\\
+				\textit{\textbackslash nopagebreak} : décourage un changement de page.
+				\subsubsection{Numérotation}
+					\textit{\textbackslash frontmatter} : rend les numéros de page en chiffres romains bas de casse, et rend les chapitres non numérotés, bien que les titres de chaque chapitre apparaissent dans la table des matières : si vous utilisez là aussi d’autres commandes de rubricage, alors utilisez la version en * (voir Sectioning),\\
+					\textit{\textbackslash mainmatter} : permet de revenir au comportement attendu, et réinitialise le numéro de page,\\
+					\textit{\textbackslash backmatter} : n’affecte pas la numérotation des pages, mais commute de nouveau les chapitres en mode sans numéros,\\
+			\subsubsection{Saut}
+				Retrouver un alinéa sur le pdf par un saut de ligne dans le code ou un nouvelle sous-sous-section ou au-dessus\\
+				\textit{\textbackslash\textbackslash}\ pour introduire des retours de ligne\\
+				\textit{\textbackslash vspace\{longueur\}}\\
+				\textit{\textbackslash medskip} : pour sauter une ligne \enquote{normale}\\
+				\textit{\textbackslash smallskip} : pour un \enquote{petit} saut de ligne\\
+				\textit{\textbackslash bigskip} : pour un \enquote{grand}' saut de ligne\\
+				\textit{\textbackslash vfill} : introduit un espace \enquote{ressort}, il pousse ce qu'il y a au dessus et en dessous pour occuper tout l'espace restant sur la page. S'il y a plusieurs commandes \textit{\textbackslash vfill} sur la même page, les espaces sont de même hauteur.
+			\subsubsection{Ligne}
+				\textit{\textbackslash } : pour forcé un espace
+		\subsection{Caracter}
+			\textit{\textbackslash textit\{texte\}} : pour ecrire en italique,\\
+			%\nomprog{\textbackslash nomprog\{texte\}} : utiliser une police à chasse fixe
+	\section{Preanbule}
+		\subsection{Format}
+		\textit{\textbackslash documentclass[Feuille,Taille]\{Classe\}} : Information est le type de document que nous souhaiton réalisé et ainsi parametré un certain nombre de parametre par defaut.
+			\subsubsection{Feuille}
+				\textit{a4paper}
+			\subsubsection{Taille}
+				\textit{12pt}
+			\subsubsection{Classes}
+				\begin{description}
+					\item[Article] pour des articles destinés à la publication et ne contenant que quelques pages,\\
+						il a son titre sur la même page que le début du texte,\\
+						avec des marges plus étroites (mise en page dans un journal)\\
+						a moins de subdivisions de texte : il n'y a pas de chapitre.
+			 		\item[Book] pour de véritables livres, de plusieurs centaines de pages.\\
+			 			Il dispose d'une page de titre séparée, suivie d'une page blanche.\\
+			 			Il peut se décomposer en parties, chapitres, sections, sous-sections, sous-sous-sections, paragraphes et sous-paragraphes.\\
+			 			Les parties et chapitres commencent sur une page impaire, \enquote{belle page}.\\
+			 			Les marges sont assez grandes pour permettre une lecture aisée (par rapport à la quantité de texte).
+					\item[Report] pour des documents un peu plus longs contenant plusieurs chapitres, comme des mémoires de thèse :\\
+						La classe report est similaire à la classe book, mais les chapitres ne commencent pas nécessairement en belle page.\\
+			 			On ne peut pas utiliser certaines fonctions: \textit{\textbackslash frontmatter},\textit{\textbackslash mainmatter},\textit{\textbackslash backmatter}.\\
+						Par contre, elle dispose d'un environnement \enquote{abstract} permettant la mise en forme automatique d'un résumé.
+					\item[Slides] pour faire des présentations sur transparents.
+					\item[Beamer] pour faire des présentations utilisant la magnifique extension beamer.
+					\item[Lettre] pour faire des lettres au format français: classe écrite par l'Observatoire de Genève.
+					\item[Memoir] pour écrire des mémoires, par exemple de fin d'étude.
+				\end{description} 
+		\subsection{Pacquet}
+			\textit{\textbackslash usepackage\{ae,lmodern\}}\\
+			\textit{\textbackslash usepackage[francais]\{babel\}}
+					\subparagraph{Les accents} peuvent etre directement tapé.\\
+						\textit{\textbackslash usepackage[utf8]\{inputenc\}}\\
+						\textit{\textbackslash usepackage[T1]\{fontenc\}}
+					\subparagraph{Les Guillemets Françaises} sont différents des guillemets Anglais ou Allemands.\\
+						\textit{\textbackslash usepackage[babel=true]\{csquotes\}} : L'extension csquotes permet une grande souplesse dans la gestion des guillemets qui s'adaptent automatiquement au contexte. L'option babel=true du package permet de faire en sorte que les guillemets correspondent à la langue définie dans l'extension babel.\\
+						\textit{\textbackslash enquote\{texte\}} : pour la commande de base du package,
+%			\textit{\textbackslash usepackage\{hyperref\} : utilisation hyperlien intern et externe
+%					\subparagraph{interne}\\
+%					 	\textit{\textbackslash hypertarget\{key\}\{target caption\}\} : Ancre et lien avec \textit{\textbackslash hyperlink{key}{link caption}\\
+%						\textit{Rd.r.:/path/to/file.\}\{ext-open le fichier\}} : fichierdans le pc\\
+%						\textit{\textbackslash href\{m'a-commissaire.\}\{email me!\}} : e-mail
+%					\subparagraph{externe}
+%						\textit{\textbackslash url\{http://www.example.com\}\}\\
+%						\textit{\textbackslash href\{http://www.example.com\}\{an example\}}
+		\subsection{Information}
+			\label{informations}
+			\textit{\textbackslash author\{texte\}}\\
+			\textit{\textbackslash title\{texte\}}\\
+			\textit{\textbackslash date\{texte\}}
+	\section{Document}
+		\textit{\textbackslash begin\{document\} ... \textbackslash end\{document\}} : pour comencé le document et le finire
+		% Structure\\ Decoupage\\
+		\subsection{Lien}
+			\subsubsection{Somaire}
+				\textit{\textbackslash tableofcontents} : Table des matier ;
+%			\subsubsection{Bibliographie}
+%				\begin{description}
+%					\item[Le Type] de document est article, livre, thèse, actes d'une conférence, …
+%					\item[La référence] unique pour l'ouvrage, on utilise fréquemment les initiales de l'auteur ou des auteurs suivi de l'année.
+%					\item[Les champs] sont séparés par une virgule, et le contenu doit comencer par \textit{=} et être entre \enquote{guillemets} ou dans un \{bloc\} par \textit{author},\textit{title},\textit{publisher} ou \textit{journal}, \textit{address},\textit{volume},\textit{number}, \textit{pages},\textit{year}
+%				\end{description} 
+%				\textit{\textbackslash\@ type\{référence,champs\}} :\\
+%				\textit{\textbackslash cite\{référence\}} : Lorsque l'on veut introduire la référence au livre.\\
+%				\textit{\textbackslash nocite\{référence\}} : Si l'on veut faire figurer un ouvrage dans la liste sans qu'il y ait de référence dans le texte.\\
+%				À l'endroit où l'on veut placer la liste des ouvrages (en général à la fin), on met :\\
+%				\textit{\textbackslash bibliographystyle\{plain-fr\}} : Le style plain-fr est un style francisé, c'est-à-dire que les noms de famille des auteurs sont en grandes et petites capitales et que les mots de description sont en français.\\
+%				\textit{\textbackslash bibliography\{nom\_fichier\}}
+			\subsubsection{Réference}
+				\textit{\textbackslash label\{étiquette\}} : Lorsque l'on veut faire référence à un passage, on place une étiquette à l'endroit désiré,\\
+				\textit{\textbackslash ref\{étiquette\}} : pour mettre le numéro de chapitre et de section,\\
+				\textit{\textbackslash pageref\{étiquette\}} : pour mettre le numéro page,
+			\subsubsection{Pied de page}
+				\textit{NOM\textbackslash footnote\{texte\}} : pour une note numéroter et assosier au nom
+		\subsection{Corp}
+			\subsubsection{Page de garde}
+				\textit{\textbackslash maketitle} : crée la page de titre à partir des les instructions donné dans les iformation ci-dessus voire \ref{informations}, mais dabord placé \textit{\textbackslash makeatletter} en préanbule.
+			\subsubsection{Titre}
+				On ne peut aller a la ligne juste apres le titre par \textit{\textbackslash\textbackslash}\\
+				Il existe des versions \enquote{étoilées} (*) de ces commandes, qui ne génèrent pas de numéro\\
+				\textit{\textbackslash part\{texte\}} :\\
+				\textit{\textbackslash chapter\{texte\}} :\\
+				\textit{\textbackslash section\{texte\}} :\\
+				\textit{\textbackslash subsection\{texte\}} :\\
+				\textit{\textbackslash subsubsection\{texte\}} : ecrit en gras et vas pas a la ligne\\
+				\textit{\textbackslash paragraph\{texte\}} : ecrit en gras et ne vas pas a la ligne\\
+				\textit{\textbackslash subparagraph\{texte\}} :  Rajoute un alinéa, ecrit en gras et ne vas pas a la ligne
+			\subsubsection{Liste}
+				\textit{\textbackslash begin\{type\}} : pour commencer,\\
+				\textit{\textbackslash item[terme]} : pour passer a l'item suivant,\\
+				\textit{\textbackslash end\{type\}} : pour finire
+					\subparagraph{Les type} permette de changer le style.\\
+						\textit{enumerate} : avec des numéro,\\
+   						\textit{itemize} : pour au point suivant,\\
+						\textit{description} : permet d'associer une définition à un terme
+	\section{Synopsise}
+		Cette parti sert a expleque les déroulement de ma façon décrire\\
+			\subsubsection{Début}
+				Pendans la construction d'un programme j'ai ressenti le besoin d'ecrire un document pour noté se que je fais et se que j'ai fait, j'en est profiter pour reviser mon \LaTeX\\
+				J'ai esayer d'instaler texmeker avent ou apres, rein ni fait. il ne trouve pas le chemin lor du lencement de compilation, j'ai donc pris texworks qui est fourni avec l'instalation de miktex.
+			\subsubsection{A faire} 
+				Pensser a remetre un corecteur \\
+				Change la police par defaut\\
+				metre les site dans une Bibliogrphie, independen des document.
+			\subsubsection{Methode}
+				Je met dabort la commende puis j'explique.\\
+				metre un alinea equivalent au parti du texte dans mon code pour une question de lisibilter.\\
+				metre les parti de code en italique et je met \enquote{:}\\
+				Ne pas metre de \textit{\textbackslash\textbackslash} a la fin  d'in titre, pour eviter les separation trop grande
+			\subsubsection{Modification}
+					\subparagraph{2023-11-26-14:10} on ne peut pas finir par \enquote{:} pour chaque point de liste car le faite de metre la partie du code en italique ne sufit pas, on finiras donc par \enquote{,} .\\
+					\subparagraph{2023-12-03-12:12} on ne peut pas metre \enquote{:} pour l'utiliser apres le nom, on commencera donc par \enquote{:} .
+
+%	\bibliographystyle{plain-fr}
+%	\bibliography{mabiblio}
+\end{document}
