@@ -3,17 +3,19 @@ Commencé le 2023-10-12
 ## Abstract
 Ce document servira à referancé les fonction des ficher Markdown (.md).
 Vous pouver toujour suivre la methode pas a pas [ici](https://github.com/skills/communicate-using-markdown).
+## Parametre
+police de largeur fixe ; Profil > Settings > Apparence > Préférence de police de l’éditeur Markdown > sélectionnez
 ## Style
 |Syntaxe         |Style           |Raccourci|
-|-               |-               |-|
-|`*txt*`         |Italique        |Ctrl+I|
-|`**txt**`       |Gras            |Ctrl+B|
-|`***txt***`     |Gras et Italique|None|
-|`~~txt~~`       |Barré           |None|
-|`<sub>txt</sub>`|Indice          |None|
-|`<sup>txt</sup>`|Exposant        |None|
-|`>txt`          |Citation        |None|
-|``` `txt` ```   |Code            |Crtl+E|
+|-               |-               |-        |
+|`*txt*`         |Italique        |Ctrl+I   |
+|`**txt**`       |Gras            |Ctrl+B   |
+|`***txt***`     |Gras et Italique|None     |
+|`~~txt~~`       |Barré           |None     |
+|`<sub>txt</sub>`|Indice          |None     |
+|`<sup>txt</sup>`|Exposant        |None     |
+|`>txt`          |Citation        |None     |
+|``` `txt` ```   |Code            |Crtl+E   |
 ### Alertes
 `>[!tp]` et en citation les informations
 |Type       |Style             |Couleur|
