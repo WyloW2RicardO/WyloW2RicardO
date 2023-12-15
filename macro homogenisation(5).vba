@@ -773,3 +773,60 @@ Sub modif2()
     Application.ScreenUpdating = True
 MsgBox "lx = " & lx
 End Sub
+
+Sub modif3()
+''' réecrie le programe de travaux '''
+Call trier_taille("prog")
+Call trier_event("objtevnt")
+
+Dim l, ll As Byte
+Dim cc_cod, cc_date, cc_eta, ccident As Byte
+Dim a, age, cn, rc As Byte
+Dim ident As String
+l = 2
+ll = 2
+cc_id = estdans("gid", "objtevnt", 1, 1, 1, 50)
+cc_eta = estdans("EVT_ETA_N", "objtevnt", 1, 1, 1, 50)
+cc_date = estdans("EVT_DAT_D", "objtevnt", 1, 1, 1, 50)
+cc_cod = estdans("EVT_COD_T", "objtevnt", 1, 1, 1, 50)
+Do While cases("prog", l, 1) <> ""
+''' faire toute les parcelles '''
+    Sheets("objtevnt").Range(Sheets("objtevnt").Cells(l, deb_c()), Sheets("objtevnt").Cells(l, fin_c())).Clear
+    Do While cases("objtevnt", ll, cc_id) = cases("prog", l, 3)
+    ''' tant que l'indente corespon, on supose que des parcelles avec le meme ident n'on pas non plus une surface proche '''
+        If cases("objtevnt", ll, cc_eta) <> "0" Then
+        ''' si il n'est pas abendoné '''
+            a = Year(cases("objtevnt", ll, cc_date))
+            cn = a - cases(rgl(), 2, 2)
+            If cn > 0 And cn < 10 Then
+            ''' si il est dans l'interval '''
+                age = a - cases("prog", l, ans_c())
+                For rc = 2 To 11
+                    If age = actn(AGmnn_l(), rc) Then
+                        If rc = 2 Then
+                            If cases("ojtevnt", ll, cc_cod) Like "PLA_*" _
+                            Or cases("ojtevnt", ll, cc_cod) Like "SL_*" _
+                            Or cases("ojtevnt", ll, cc_cod) Like "SN_*" _
+                            Or cases("ojtevnt", ll, cc_cod) Like "TAIL_*" Then
+                                Sheets(f).Cells(l, deb_c() + cn) = actn(nom_l(), rc)
+                            End If
+                        ElseIf rc < 6 Then
+                            If cases("ojtevnt", ll, cc_cod) = "DEBLIG" Then
+                                Sheets(f).Cells(l, deb_c() + cn) = actn(nom_l(), rc)
+                            End If
+                        ElseIf rc > 9 Then
+                            If cases("ojtevnt", ll, cc_cod) Like "CR_*" Then
+                                Sheets(f).Cells(l, deb_c() + cn) = actn(nom_l(), rc)
+                            End If
+                        ElseIf cases("ojtevnt", ll, cc_cod) Like "CE#" Then
+                            Sheets(f).Cells(l, deb_c() + cn) = actn(nom_l(), rc)
+                        End If
+                    End If
+                Next
+            End If
+        End If
+        ll = ll + 1
+    Loop
+    l = l + 1
+Loop
+End Sub
