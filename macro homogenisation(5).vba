@@ -349,36 +349,36 @@ Function Smm_Si(valeur, condition, f, l, ll, c, cc, B)
 End Function
 
 Function CCdr(f, l, c)
-    If cases(f, l, c) = actn(nom(), PL()) Then
-        CCdr = PL()
-        Exit Function
-    End If
-    If c > cnb() Then
-        c1 = c - 1
-        lc = cases(f, l, c1)
-'MsgBox lc
-        Do While c1 > cnb() _
-        And lc = ""
-            c1 = c1 - 1
-            lc = cases(f, l, c1)
-        Loop
-        If lc = "" Then
-            CCdr = estdans(cases(f, l, c), rgl(), nom(), nom(), PL(), CR_25()) - 1
+''' retourne la colone dans regle de la dernier action '''
+    vlr = cases(f, l, c)
+    If vlr <> "" Then
+    ''' si on deja les travaux en cour '''
+        If vlr = actn(nom_l(), PL_c()) Then
+            CCdr = PL_c()
         Else
-            CCdr = estdans(lc, rgl(), nom(), nom(), PL, CR_25())
+            CCdr = estdans(vlr, rgl(), nom_l(), nom_l(), PL_c() + 1, CR25_c()) - 1
         End If
     Else
-        If cases(f, l, c) = "" Then
-            CCdr = CR()
-            age = AGql(f, l, c - cnb())
-            Do While CCdr > PL() _
-            And age < actn(AGmnn(), CCdr)
+        c1 = c
+        vlr1 = vrl
+        Do While c1 > deb_c() _
+        And vlr1 = ""
+            c1 = c1 - 1
+            vlr1 = cases(f, l, c1)
+        Loop
+        If vlr1 <> "" Then
+            CCdr = estdans(vrl1, rgl(), nom_l(), nom_l(), PL_c(), CR25_c())
+        Else
+        ''' le retrouver en fonction de l'age moyen '''
+            CCdr = CR_c()
+            age = AGql(f, l, c - deb_c())
+            Do While CCdr > PL_c() _
+            And age <= actn(AGmnn_l(), CCdr)
                 CCdr = CCdr - 1
             Loop
-        Else
-            CCdr = estdans(cases(f, l, c), rgl(), nom(), nom(), PL(), CR_25()) - 1
         End If
     End If
+'MsgBox "CCdr " & CCdr
 End Function
 
 Function AGql(f, l, cn)
