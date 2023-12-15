@@ -82,6 +82,23 @@ Sub trier_taille(nom)
     End With
 End Sub
 
+Sub trier_event(nom)
+    With ActiveWorkbook.Worksheets(nom).ListObjects(nom).Sort
+        With .SortFields
+            .Clear
+            .Add2 Key:=Range("I1"), SortOn:=xlSortOnValues, DataOption:=xlSortNormal, Order:=xlAscending
+            .Add2 Key:=Range("C1"), SortOn:=xlSortOnValues, DataOption:=xlSortNormal, Order:=xlAscending
+            .Add2 Key:=Range("AM1"), SortOn:=xlSortOnValues, DataOption:=xlSortNormal, Order:=xlAscending
+            .Add2 Key:=Range("AG1"), SortOn:=xlSortOnValues, DataOption:=xlSortNormal, Order:=xlAscending
+        End With
+        .Header = xlYes
+        .MatchCase = False
+        .Orientation = xlTopToBottom
+        .SortMethod = xlPinYin
+        .Apply
+    End With
+End Sub
+
 Sub colorer(num, f, l, ll, c, cc)
 'MsgBox num & ", " & nom & ", " & l & ", " & ll & ", " & c & ", " & cc
     Sheets(f).Range(Sheets(f).Cells(l, c), Sheets(f).Cells(ll, cc)).Interior.ColorIndex = num
