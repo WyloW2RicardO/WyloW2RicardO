@@ -668,30 +668,36 @@ Sheets(FC()).Cells(l, c).Select
     Next
 End Sub
 
-Sub prcr_2(lx)
+Sub prcr_2(l_fin)
     Dim cmm, cn10, cx10 As Byte
     Dim mnn0, som0, mnn1, som1, somI As Long
     
-    cn10 = cnb() + 10
-    cx10 = cxb() + 10
-    cmm = cnb()
-    som0 = somme(FC(), lna(), lx, cn10, cx10)
-    mnn0 = som0 / 10
-    For c = cnb() To cxb() - 1
+    cn10 = deb_c() + 10
+    cx10 = fin_c() + 10
+    cmm = deb_c
+    For c = deb_c() To fin_c() - 1
         c10 = c + 10
-        Call prcr_3(mnn0, lx, c, True)
-        som0 = somme(FC(), lna(), lx, cn10, cx10)
-        mnn0 = som0 / 10
-        somI = somme(FC(), lna(), lx, c10, c10)
-'MsgBox cmm & " : " & c & " ," & WorksheetFunction.RoundUp(mnn0 / 1000, 0) & " > " & WorksheetFunction.RoundDown(somI / 1000, 0)
-        If c > cmm _
-        And WorksheetFunction.RoundUp(mnn0 / 1000, 0) > WorksheetFunction.RoundDown(somI / 1000, 0) Then
-            cmm = c
-            som1 = somme(FC(), lna(), lx, cn10, c10)
-            mnn1 = som1 / (c - cnb() + 1)
-            For cc = cnb() To c
-                Call prcr_3(mnn1, lx, cc, False)
-            Next
+        som0 = somme(FC(), deb_l(), l_fin, c10, cx10)
+        mnn0 = som0 / (fin_c() - c + 1)
+'MsgBox "som0 " & som0
+'MsgBox fin_c() - c + 1
+'MsgBox "mnn0 " & mnn0
+        somI = somme(FC(), deb_l(), l_fin, c10, c10)
+'MsgBox "somIa " & somI
+        If somI > 0 Then
+            'Call prcr_3(mnn0, l_fin, c, True)
+            Call prcr_3(mnn0, l_fin, c, False)
+        Else
+            If c = deb_c() Then
+                Call prcr_3(0, l_fin, deb_c(), False)
+            ElseIf c > cmm Then
+                cmm = c
+                som1 = somme(FC(), deb_l(), l_fin, c10 - 1, c10)
+                mnn1 = som1 / 2
+'MsgBox "som1 " & som1
+'MsgBox "mnn1 " & mnn1
+                Call prcr_3(mnn1, l_fin, c - 1, False)
+            End If
         End If
     Next
 End Sub
