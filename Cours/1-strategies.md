@@ -14,6 +14,8 @@ La **stratégie** d’une entreprise est l’ensemble des ***décisions*** et de
   - [Plan](#plan)
     - [Performance](#performance)
     - [Evaluer](#evaluer)
+- [Annex](#annex)
+  - [Remerciment](#remerciment)
 
 ## Diagnostique
 
@@ -33,4 +35,9 @@ La **stratégie** d’une entreprise est l’ensemble des ***décisions*** et de
 
 ### Evaluer
 
+# Annex
+
+## Remerciment
+
+Je remarci SIMON Nicolas Professeur à l'IA School en 2024 pour son cour d'introduction au strategie de developpement d'entreprise
 <!-- crée par WyloW2RicardO le 2024-03-10 -->
