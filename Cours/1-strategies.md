@@ -1,6 +1,6 @@
 # Strategies des entreprises
 
-La stratégie d’une entreprise est l’ensemble des **décisions** et des actions coordonnées lui permettant d’atteindre ses objectifs **long terme** et de lui fournir un **avantage** compétitif unique.
+La **stratégie** d’une entreprise est l’ensemble des _décisions_ et des actions coordonnées lui permettant d’atteindre ses objectifs _long terme_ et de lui fournir un _avantage_ compétitif unique.
 
 - [Strategies des entreprises](#strategies-des-entreprises)
   - [Diagnostique](#diagnostique)
@@ -30,3 +30,5 @@ La stratégie d’une entreprise est l’ensemble des **décisions** et des acti
 ### Performance
 
 ### Evaluer
+
+<!-- crée par WyloW2RicardO le 2024-03-10 -->
