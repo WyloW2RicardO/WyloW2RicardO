@@ -4,7 +4,7 @@
 
 La **stratégie** d’une entreprise est l’ensemble des ***décisions*** et des actions coordonnées lui permettant d’atteindre ses objectifs ***long terme*** et de lui fournir un ***avantage*** compétitif unique.
 
-Dans ce cour on cherchera à ***identifier*** les risques et opportunités à la rechercher des facteurs de succès valorisés par le marché et dans evaluer le potentiel de croissance et l’attractivité du secteur pour esquisser des stratégies possibles.
+Dans ce cour on cherchera à mettre en place des débuts de solution por que l'entreprise se démarque des autres.
 >Varier les points de vue avec des avis interne et externe pluridisiplinaire.
 Hiérarchiser et Séléctioné les plus pertinantes.
 
@@ -26,9 +26,12 @@ Hiérarchiser et Séléctioné les plus pertinantes.
     - [Performance](#performance)
     - [Evaluer](#evaluer)
 - [Annex](#annex)
+  - [MyMap](#mymap)
   - [Remerciment](#remerciment)
 
 ## Diagnostique
+
+**Identifier** les risques et opportunités à la rechercher des facteurs de succès valorisés par le marché et dans ***evaluer*** le potentiel de croissance et l’attractivité du secteur pour ***esquisser*** des stratégies possibles.
 
 ### Externe
 
@@ -49,7 +52,9 @@ determine les principaux facteurs macro qui influencent l’activité.
 
 #### Mézo
 
-##### Structure 
+##### Structure
+
+Identifier les structure pour chaque niveaux de [groupe d'activité](0-introduction.md#groupe).
 
 - **Monopole** : industrie dominée par ***une*** entreprise avec peut de compétision , un fort pouvoir sur les client.
 - **Oligopole** : industrie dominée par ***quelque*** entreprises avec peut de compétision entre eux, un fort pouvoir sur les client et founiseur.
@@ -107,6 +112,8 @@ déterminer si le secteur est attractif et identifier les possibilités stratég
 ### Evaluer
 
 # Annex
+
+## MyMap
 
 ## Remerciment
 
