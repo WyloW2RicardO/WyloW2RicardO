@@ -8,7 +8,7 @@
     - [Vision](#vision)
     - [Veleurs](#veleurs)
     - [Parties prenantes (stakeholders)](#parties-prenantes-stakeholders)
-      - [matrice VISE](#matrice-vise)
+      - [Matrice VISE](#matrice-vise)
 - [Annex](#annex)
   - [Remerciment](#remerciment)
 
@@ -35,16 +35,14 @@ Elle indiquent les principes et les pratiques fondamentaux qui régissent sa man
 
 Ce sont les individus ou un groupe d’individus qui participe ***directement*** ou ***indirectement*** à la vie d’une entreprise, l’***influence*** et/ou est influencé par elle.
 
-#### matrice VISE
+#### Matrice VISE
 
 Elle nous permettra de cartographie les partie prenante selon son ***statut***, les ***interaction*** avec l'entreprise, ses ***objectif***, de son ***attention*** et de son ***pouvoir*** sur l'entreprise.
 
-Here is a simple flow chart:
-
+<!-- les entete sont coupé -->
 ```mermaid
 quadrantChart
     %%{init:{'theme':'dark'}}%%
-    title Matrice VISE
     x-axis MOIN Interet --> PLUS Interet
     y-axis MOIN Pouvoir --> PLUS Pouvoir
     quadrant-1 ENGAGER
