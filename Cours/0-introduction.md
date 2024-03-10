@@ -3,16 +3,18 @@
 > Cour inérant à tout les coure de management
 
 - [Introduction](#introduction)
-  - [Notions](#notions)
+  - [L'entreprise](#lentreprise)
     - [Mission](#mission)
     - [Vision](#vision)
     - [Veleurs](#veleurs)
+  - [Activités](#activités)
+    - [Groupe](#groupe)
     - [Parties prenantes (stakeholders)](#parties-prenantes-stakeholders)
       - [Matrice VISE](#matrice-vise)
 - [Annex](#annex)
   - [Remerciment](#remerciment)
 
-## Notions
+## L'entreprise
 
 ### Mission
 
@@ -31,6 +33,15 @@ Elle indiquent les principes et les pratiques fondamentaux qui régissent sa man
 - ***Tabous*** : Peurs (concurrents), mauvais choix et échecs passés, scandales,…
 - ***Mythes et Héros*** : Légendes, histoire du fondateur et des débuts, anecdotes marquantes, coups d’éclats,…
 
+## Activités
+
+### Groupe
+
+- **Secteur d'activité** [industry] : ensemble d'entreprise offrant produits et services comparable et globalement sustituable.
+- **Group strategique** : ensemble d’entreprises d’un même secteur d’activité ayant des stratégies et caractéristiques semblables et s’appuyant sur les mêmes facteurs de concurrence.
+- **Marché** : ensemble de clients de produits ou services spécifiques ayant des caractéristiques similaires.
+Lieu de rencontre entre l’offre et la demande.
+
 ### Parties prenantes (stakeholders)
 
 Ce sont les individus ou un groupe d’individus qui participe ***directement*** ou ***indirectement*** à la vie d’une entreprise, l’***influence*** et/ou est influencé par elle.
@@ -42,7 +53,7 @@ Elle nous permettra de cartographie les partie prenante selon son ***statut***, 
 <!-- les entete sont coupé -->
 ```mermaid
 quadrantChart
-    %%{init:{'theme':'dark'}}%%
+%%{init:{'theme':'dark'}}%%
     x-axis MOIN Interet --> PLUS Interet
     y-axis MOIN Pouvoir --> PLUS Pouvoir
     quadrant-1 ENGAGER
