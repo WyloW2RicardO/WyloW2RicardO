@@ -42,7 +42,9 @@ Elle nous permettra de cartographie les partie prenante selon son ***statut***, 
 Here is a simple flow chart:
 
 ```mermaid
-quadrantChart %%{init:{'theme':'dark'}}%%
+quadrantChart
+    %%{init:{'theme':'dark'}}%%
+    title Matrice VISE
     x-axis MOIN Interet --> PLUS Interet
     y-axis MOIN Pouvoir --> PLUS Pouvoir
     quadrant-1 ENGAGER
