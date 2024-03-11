@@ -19,6 +19,12 @@ Hiérarchiser et Séléctioné les plus pertinantes.
       - [Micro](#micro)
         - [6 force de Porteur](#6-force-de-porteur)
     - [Interne](#interne)
+      - [Chaine de Valeur](#chaine-de-valeur)
+      - [Capacité](#capacité)
+        - [Modèle VRIO](#modèle-vrio)
+    - [Synthétiser](#synthétiser)
+      - [Matrice SWOT](#matrice-swot)
+      - [Matrice TOWS](#matrice-tows)
   - [Choix](#choix)
     - [Concurence](#concurence)
     - [Croissance](#croissance)
@@ -26,14 +32,14 @@ Hiérarchiser et Séléctioné les plus pertinantes.
     - [Performance](#performance)
     - [Evaluer](#evaluer)
 - [Annex](#annex)
-  - [MyMap](#mymap)
   - [Remerciment](#remerciment)
 
 ## Diagnostique
 
-**Identifier** les risques et opportunités à la rechercher des facteurs de succès valorisés par le marché et dans ***evaluer*** le potentiel de croissance et l’attractivité du secteur pour ***esquisser*** des stratégies possibles.
 
 ### Externe
+
+Identifier les ***risques et opportunités*** à la rechercher des **facteurs de succès** valorisés par le marché et dans ***evaluer*** le potentiel de croissance et l’attractivité du secteur pour ***esquisser*** des stratégies possibles.
 
 #### Macro
 
@@ -54,7 +60,7 @@ determine les principaux facteurs macro qui influencent l’activité.
 
 ##### Structure
 
-Identifier les structure pour chaque niveaux de [groupe d'activité](0-introduction.md#groupe).
+Identifier les structure pour chaque niveaux du [groupe d'activité](0-introduction.md#groupe).
 
 - **Monopole** : industrie dominée par ***une*** entreprise avec peut de compétision , un fort pouvoir sur les client.
 - **Oligopole** : industrie dominée par ***quelque*** entreprises avec peut de compétision entre eux, un fort pouvoir sur les client et founiseur.
@@ -99,6 +105,104 @@ déterminer si le secteur est attractif et identifier les possibilités stratég
 
 ### Interne
 
+Identifier les caractéristiques de l’entreprise pertinentes au regard de son industrie.
+Evaluer les ***forces et faiblesses*** de l’entreprise par rapport à ses concurrents.
+Déterminer les **capacité distinctif** de l’entreprise.
+
+#### Chaine de Valeur
+
+L’analyse de la chaîne de valeur permet de comprendre et d’**identifier les gisements** de création de valeur au sein de l’entreprise. Elle permet également de calculer le rapport entre la ***valeur apportée*** et le ***coût engendré*** de l'entreprise mais aussi en ***amont et en aval***.
+Pour chaque activité de l'entreprise on peut comparer chaque secteur d'activité dans une autre entreprise sans lien necessaire. Pour ***transposer*** les activités performent à son entreprise.[Benchmarking]
+
+```mermaid
+%%{init:{'theme':'dark'}}%%
+flowchart RL
+  subgraph Primaire
+    direction TB
+    A[Logistique Amont]
+    B[Opération]
+    C[Logistique]
+    D[Marketing]
+    E[Service]
+  end
+  subgraph Supports
+    direction TB
+    F[Infrastrure]
+    G[Ressource Humaines]
+    H[Tecnologies]
+    I[Achats]
+  end
+```
+
+#### Capacité
+
+Une foi avoir reccenser les diferentes chaine de valeur, on peut identifier les reél capacité au-dessu du ***seuil*** qui ne ceseras jamais d'augmenter.
+Elle contribue à sa pérennité et ***potentiellement*** à créer un avantage compétitif.
+
+- **Ressources** : ***actif tangibles ou intangibles*** qu'elle à disposition. (nom communs)
+- **Compétances** : ***procédés*** qui permettent d'exploiter ses ressources. (verbe)
+
+##### Modèle VRIO
+
+On dertermine si caque capacité est strategique
+
+- **Valeur** : capacité qui contribue à la ***création ou réduire*** les cout du produit exploite l'***envirenement*** qui ***apporte*** aux clients.
+- **Rareté** : capacité maitrisée par ***trés peu*** de concurent
+- **Inimitabilité** : capacité difficile à imiter ou substituer dû à un ***compléxité*** du processus ou infrastrucure complex par l'accumulation de savoir-faire culturel et historique.
+- **Organisme** : capacité est correctement ***exploitée***.
+
+```mermaid
+%%{init:{'theme':'dark'}}%%
+flowchart LR
+    A[apporte] -->|non| F
+    A -->|oui| B
+    B[courent] -->|oui| G
+    B -->|non| C
+    C[imitable] -->|oui| H
+    C -->|non| D
+    D[exploité] -->|non| I
+    D -->|oui| E
+    E[compétitif]
+    F[désaventage]
+    G[parité]
+    H[temporaire]
+    I[aventage]
+```
+
+### Synthétiser
+
+Les environement externe et interne sont en costante evolution. Pour mintenire un aventage compétitif il faut avoir une **capacité dynamique** en ***réorganiser*** ses activité par l'***anticipation*** des évolution et ***saisir*** les opportunité.
+
+#### Matrice SWOT
+
+Outil pour metre en lumier la ***situation stratégique*** (donnée) par la mise en relation de l'environement externe et interne.
+
+```mermaid
+%%{init:{'theme':'dark'}}%%
+quadrantChart
+    y-axis Interne --> Externe
+    quadrant-1 FAIBLESSE
+    quadrant-2 FORCE
+    quadrant-3 OPPORTUNITE
+    quadrant-4 MENACE
+```
+
+#### Matrice TOWS
+
+Outil pour metre en lumier les ***stratégies possibles*** (piste) par le croisement des rebrique de la matrice SWOT.
+
+<!-- il faut aller à la ligne -->
+```mermaid
+%%{init:{'theme':'dark'}}%%
+quadrantChart
+  x-axis Force --> Faiblesse
+  y-axis Menace --> Opportunite
+  quadrant-1 "Comment utiliser les opportunites pour sumonter nos faiblesses."
+  quadrant-2 "Comment utiliser nos forces pour saisir les opportunités."
+  quadrant-3 "Comment utiliser nos forces pour éviter les menaces."
+  quadrant-4 "Comment minimiser nos faiblesses pour éviter les menaces."
+```
+
 ## Choix
 
 ### Concurence
@@ -112,8 +216,6 @@ déterminer si le secteur est attractif et identifier les possibilités stratég
 ### Evaluer
 
 # Annex
-
-## MyMap
 
 ## Remerciment
 
