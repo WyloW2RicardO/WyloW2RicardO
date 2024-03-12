@@ -250,7 +250,6 @@ xychart-beta
 
 #### Océan
 
-
 | Rouge | Bleu |
 |-|-|
 | Se battre sur un espace de marché | Créer un espace de marché non contesté existant|
