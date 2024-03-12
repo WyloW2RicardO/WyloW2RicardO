@@ -17,7 +17,6 @@ L'aboutissement d'un reve passe par la création de valeur ; la somme de tout le
     - [Librairie](#librairie)
   - [Remerciment](#remerciment)
 
-
 ## Etude du Marché
 
 L'etude du marcher servira a connaitre l'environement et les prospet.
@@ -86,7 +85,7 @@ Elle apporte un effet visuel et sytémeique des propositions.
 - **Activités clés** : ***fonctionement*** esseniel pour la mise en place des valeurs ; Fabrique, service, web
 - **Ressource clés** : santé de la société pour concrétisé vos embition ; physique, intelect, humain
 - **Partenaire clés** : peut etre a lui seul un aventage concurrentiel ; fourniseur, financeur, expert (incertitude), soutraitent (recentré)
-- **Revenue** : cash généré ; BtC(vente, location, prêt), BtB(pub, sponsor) 
+- **Revenue** : cash généré ; BtC(vente, location, prêt), BtB(pub, sponsor)
 - **Coût** : principaux frais ; fixe(loyer), variable(achat matier), semi(éléctricité)
 
 ```mermaid
