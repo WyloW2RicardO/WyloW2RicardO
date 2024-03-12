@@ -36,6 +36,7 @@ Hiérarchiser et Séléctioné les plus pertinantes.
   - [Plan](#plan)
     - [Performance](#performance)
     - [Evaluer](#evaluer)
+      - [Prévition](#prévition)
 - [Annex](#annex)
   - [Remerciment](#remerciment)
 
@@ -123,7 +124,7 @@ Pour chaque activité de l'entreprise on peut comparer chaque secteur d'activit�
 ```mermaid
 %%{init:{'theme':'dark'}}%%
 flowchart RL
-  subgraph Primaire
+  subgraph Primaire (direct)
     direction TB
     A[Logistique Amont]
     B[Opération]
@@ -131,7 +132,7 @@ flowchart RL
     D[Marketing]
     E[Service]
   end
-  subgraph Supports
+  subgraph Supports (transversal)
     direction TB
     F[Infrastrure]
     G[Ressource Humaines]
@@ -288,6 +289,15 @@ quels moyens et méthodes.
 ### Performance
 
 ### Evaluer
+
+<!-- peut-etre à deplace -->
+#### Prévition
+
+- Définir le périmètre [scope] du scénario : quel thème ? quelle durée ?
+- Identifier les variables pivots [key drivers] du changement avec leur dépendance, force et incertitude
+- Identifier les impacts de chaque scénario et intégrer à la stratégie.
+- Développer un récit cohérent à partir d’hypothèses contradictoires en phase avec les mega-tendances [megatrends], identifier les points d’inflexion et leur probabiliter sur le longt terme.
+- Confronter régulièrement les scénarios aux développements réels.
 
 # Annex
 
