@@ -4,9 +4,6 @@
 
 - [Introduction](#introduction)
   - [L'entreprise](#lentreprise)
-    - [Mission](#mission)
-    - [Vision](#vision)
-    - [Veleurs](#veleurs)
   - [Activités](#activités)
     - [Groupe](#groupe)
     - [Parties prenantes (stakeholders)](#parties-prenantes-stakeholders)
@@ -16,22 +13,13 @@
 
 ## L'entreprise
 
-### Mission
-
-Elle renseigne sur sa raison d’être fondamentale, sa place dans son écosystème et sa spécificité.
+- **Mission** : Elle renseigne sur sa raison d’être fondamentale (aspiration), sa place dans son écosystème et sa spécificité.
 Pour qui, pourquoi, sa promesse.
-
-### Vision
-
-Elle renseigne sur son aspiration, son ambition, le futur qu’elle veut dessiner, ce qu’elle veut accomplir.
-
-### Veleurs
-
-Elle indiquent les principes et les pratiques fondamentaux qui régissent sa manière de fonctionner.
-
-- ***Rites et codes*** : Réunions, séminaires, célébrations, pots, dresscode, jargon,…
-- ***Tabous*** : Peurs (concurrents), mauvais choix et échecs passés, scandales,…
-- ***Mythes et Héros*** : Légendes, histoire du fondateur et des débuts, anecdotes marquantes, coups d’éclats,…
+- **Vision** : Elle renseigne sur son aspiration, son ambition, le futur qu’elle veut dessiner, ce qu’elle veut accomplir.
+- **Veleurs** : Elle indiquent les principes et les pratiques fondamentaux qui régissent sa manière de fonctionner. C'est se qui permet le tavaille d'equipe.
+  - ***Rites et codes*** : Réunions, séminaires, célébrations, pots, dresscode, jargon,…
+  - ***Tabous*** : Peurs (concurrents), mauvais choix et échecs passés, scandales,…
+  - ***Mythes et Héros*** : Légendes, histoire du fondateur et des débuts, anecdotes marquantes, coups d’éclats,…
 
 ## Activités
 
@@ -66,6 +54,6 @@ quadrantChart
 
 ## Remerciment
 
-Je remarci SIMON Nicolas Professeur à l'IA School en 2024 pour son cour d'introduction au strategie de developpement d'entreprise
+Je remarcis SIMON Nicolas et BALAGUER Raphaël Professeurs à l'IA School en 2024 pour son cour d'introduction au strategie de developpement d'entreprise
 
 <!-- crée par WyloW2RicardO le 2024-03-10 -->
