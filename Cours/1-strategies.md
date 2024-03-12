@@ -27,6 +27,11 @@ Hiérarchiser et Séléctioné les plus pertinantes.
       - [Matrice TOWS](#matrice-tows)
   - [Choix](#choix)
     - [Concurence](#concurence)
+      - [3 type de domination](#3-type-de-domination)
+        - [Horloge strategique](#horloge-strategique)
+      - [Océan](#océan)
+        - [Inovation de valeur](#inovation-de-valeur)
+      - [Theorie des jeux](#theorie-des-jeux)
     - [Croissance](#croissance)
   - [Plan](#plan)
     - [Performance](#performance)
@@ -36,6 +41,7 @@ Hiérarchiser et Séléctioné les plus pertinantes.
 
 ## Diagnostique
 
+Déterminer la **position stratégique** de l’entreprise et ses choix potentiels.
 
 ### Externe
 
@@ -205,9 +211,77 @@ quadrantChart
 
 ## Choix
 
+Sur un marché très concurrentiel, il faut prendre en compte les interactions entre compétiteurs et parfois choisir entre compétition et coopération.
+Comment croître et assurer sa pérennité ?
+
 ### Concurence
 
+La **stratégie concurrentielle** [business strategy]
+étudie comment l’entreprise se positionne par rapport à ses concurrents sur ***un marché donné***.
+Comment être compétitif sur mon marcher ?
+
+#### 3 type de domination
+
+- **Coût** : avoir les cout les plus bas ;
+  - Diminuant les coûts directs,
+  - Exploitant des effet d’échelle,
+  - Utilisant l’effet d’expérience,
+  - Optimisant les produits
+  - Optimisant les processus
+- **Différentiation** : Valorisation d'un facteur ;
+  - Caracteristique
+  - Relation
+  - Complémentarité
+- **Focus** : orientée exclusivement ver un segment de marcher
+
+Pour Porter, l’entreprise doit développer une seule de ces stratégies sur chacun de ses domaines d’activités stratégiques.
+Le risque est d'avoir les 2 inconvégnents et donc ne pas avoir une bonne rentabilité
+
+```mermaid
+xychart-beta
+%%{init:{'theme':'dark'}}%%
+    x-axis Part_du_Marche
+    y-axis Rentabilite
+    line [16,4,2,1,2,4,16]
+```
+
+##### Horloge strategique
+
+#### Océan
+
+
+| Rouge | Bleu |
+|-|-|
+| Se battre sur un espace de marché | Créer un espace de marché non contesté existant|
+| Vaincre les concurrents | Faire perdre toute ***pertinence*** aux concurrents|
+| Exploiter une demande existante | Créer et saisir une ***nouvelle demande***|
+| Arbitrer entre valeur/coût | Sortir de l’***arbitrage*** valeur/coût|
+| Aligner le système entier des activités d’une entreprise sur la poursuite de la différentiation **ET** des coûts bas | Aligner le système entier des activités d’une entreprise sur son choix stratégique différentiation **OU** coûts bas |
+
+Les Océans Bleus créés par des ***acteurs établis*** dans leur coeur de métier Ce qui compte est plutôt l’***avancée stratégique***, la création d’un marché à travers l’***innovation par la valeur*** [value innovation]. ***pas dus uniquement à l’innovation technologique***.
+
+##### Inovation de valeur
+
+C'est la jonction entre la baisse des cout et le resenti de valeur par les clients.
+
+- **Eliminer** les éléments qui n'apporte rien
+- **Réduire** les éléments qui amenent un surcout non perçue
+- **Elever** les éléments moin exploité pour les clients
+- **Créer** de nouveaux élément sur le marcher
+
+#### Theorie des jeux
+
+le gain de chacun dépend des décisions de tous les autres.
+La theorie des jeux est un ensemble de concepts pour décrire et prévoir le ***comportement et les interactions*** qui s’influencent mutuellement.
+Elle repose sur le postulat que chacun des acteurs va toujours chercher rationnellement à ***maximiser ses gains et minimiser ses pertes***.
+Il y a équilibre lorsqu’aucun des joueurs ***ne regrette*** son choix. L’équilibre n’est pas forcément optimal.
+
 ### Croissance
+
+La **stratégie de croissance** [corporate strategy]
+étudie comment l’entreprise peut se développer
+dans d’autres directions (produits, marchés) et par
+quels moyens et méthodes.
 
 ## Plan
 
