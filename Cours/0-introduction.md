@@ -54,6 +54,7 @@ quadrantChart
 
 ## Remerciment
 
-Je remarcis SIMON Nicolas et BALAGUER Raphaël Professeurs à l'IA School en 2024 pour son cour d'introduction au strategie de developpement d'entreprise
+Je remarcis SIMON Nicolas Professeurs à l'IA School en 2024 pour son cour d'introduction au [strategie d'entreprise](2-strategies.md)
+Je remerci BALAGUER Raphaël Professeur à l'IA School en 2024 pour son cour sur d'introduction au [business model](1-business.md) d'entreprise
 
 <!-- crée par WyloW2RicardO le 2024-03-10 -->
