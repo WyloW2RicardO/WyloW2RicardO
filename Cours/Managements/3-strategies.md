@@ -33,6 +33,10 @@ Hiérarchiser et Séléctioné les plus pertinantes.
         - [Inovation de valeur](#inovation-de-valeur)
       - [Theorie des jeux](#theorie-des-jeux)
     - [Croissance](#croissance)
+      - [Voie](#voie)
+        - [Matrice d'Ansoff](#matrice-dansoff)
+      - [Mode](#mode)
+      - [Porteufeuil d'activité](#porteufeuil-dactivité)
   - [Plan](#plan)
     - [Performance](#performance)
     - [Evaluer](#evaluer)
@@ -229,7 +233,7 @@ Comment être compétitif sur mon marcher ?
   - Utilisant l’effet d’expérience,
   - Optimisant les produits
   - Optimisant les processus
-- **Différentiation** : Valorisation d'un facteur ;
+- **Différentiation** : Valorisation d'un facteur qui justifie un prix plus élévation ;
   - Caracteristique
   - Relation
   - Complémentarité
@@ -271,17 +275,51 @@ C'est la jonction entre la baisse des cout et le resenti de valeur par les clien
 
 #### Theorie des jeux
 
-le gain de chacun dépend des décisions de tous les autres.
+Le gain de chacun dépend des décisions de tous les autres.
 La theorie des jeux est un ensemble de concepts pour décrire et prévoir le ***comportement et les interactions*** qui s’influencent mutuellement.
 Elle repose sur le postulat que chacun des acteurs va toujours chercher rationnellement à ***maximiser ses gains et minimiser ses pertes***.
 Il y a équilibre lorsqu’aucun des joueurs ***ne regrette*** son choix. L’équilibre n’est pas forcément optimal.
 
 ### Croissance
 
-La **stratégie de croissance** [corporate strategy]
-étudie comment l’entreprise peut se développer
-dans d’autres directions (produits, marchés) et par
-quels moyens et méthodes.
+La **stratégie de croissance** [corporate strategy] étudie comment l’entreprise peut se développer dans d’autres ***directions*** (produits, marchés) et par quels moyens et méthodes.
+
+#### Voie
+
+diversification question en croissance critique en maturité ou déclin
+
+##### Matrice d'Ansoff
+
+possibilité possible d'une entreprise
+obsolesence : suptitution 
+newProdinov2 : 
+  conai marcher : abitude du marcher
+  synergi : produit nonconpletement diferent
+  retour pour les encien produire
+abitude conso
+integration : faire se que l'on veut, contrebaliser les force fourniseur
+
+#### Mode
+
+interne moin risquer car arret voulu
+externe : dressing regar dessente de l'investisement
+
+#### Porteufeuil d'activité
+
+la presance dans different activité arbitrege
+croissance comparé a la croissance moyenne du marcher
+part parapor au lider du marcher
+cercle vertueu
+
+adl
+naturl : etape positive du marcher
+declin peut etre interser les dominant
+
+mackinsey ~~ BDG
+plus large
+
+parental : facilité de gerer
+
 
 ## Plan
 
