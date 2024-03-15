@@ -20,7 +20,7 @@ L'aboutissement d'un reve passe par la création de valeur ; la somme de tout le
 ## Etude du Marché
 
 L'etude du marcher servira a connaitre l'environement et les prospet.
-Assurer vous que chaque ***proposition de valeur*** corespont au besoin de vos prospet que vous avez interoger selon la segmentation choisie.
+Assurer vous que chaque ***proposition de [valeur](1-introduction.md#lentreprise)*** corespont au besoin de vos prospet que vous avez interoger selon la segmentation choisie.
 Il faut avoir des connaissance approfondie du marché par la colecte de donnés (***valide et realiste***).
 
 ### Environement
@@ -54,6 +54,12 @@ Pour quoi elle va exister, ou elle va et comment et s'y ***adapter sans cesse***
 - **Comment** : les ***finalité*** pratique ; outils,resources
 - **Vie** : le lien entre la vie perso et pro doit etre en ***acord***.
 
+3-STRATEGIE
+EFFET DE LEVIER
+POINT MORT
+AVT COCURT
+impacte tech
+
 ### Innovant
 
 On cherche à construire nouvel ***courbe de valeur*** pour certain atribue.
@@ -67,11 +73,11 @@ On peut identifier le **besoin fondamental**, laten, non exprimé qui peut faire
 
 > Exemple de type de business inovant
 >
->- Gratuité : utilisateur n'est pas le payer
 >- Freenium : il devien payent
->- Low coste :
->- Vert :
+>- Gratuité : utilisateur n'est pas le payer
+>- Low coste : trop peut tuer le marcher
 >- Platforme : mettre enrelation
+>- Vert :
 
 ### Presentation Canva
 
