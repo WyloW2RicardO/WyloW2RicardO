@@ -21,7 +21,7 @@ statut <- c("cadre","cadre","cadre","cadre","cadre","non-cadre","non-cadre","non
 1. Effectuer un test permetant de repondre à la quetion avec un seuil $\alpha$=5%.
 
 ```R
-## On est bien d'une variable explicative boolein à une continue à expliqué, on peut donc apliqué la regretion linéair.
+## On est bien d'une variable explicative boolein à une continue à expliqué, on peut donc apliqué la regretion linéair et non le test de correlation.
 
 ## On verifi si il ne sont pas indépendente
 S=seq(0,1,by=0.25)
@@ -43,12 +43,18 @@ cmt=table(salaire_quali,statut)
 #     (23.8,31]     0         2
 #     (31,35.2]     2         0
 #     (35.2,90]     3         0
+
+
 chisq.test(cmt)
 # Pearson's Chi-squared test
 # data:  Cmt
 # X-squared = 9, df = 3, p-value = 0.02929
 # Message d'avis : Dans chisq.test(Cmt) : L’approximation du Chi-2 est peut-être incorrecte
+### il faut que tout 90% des categorie quantitative
 ## p-value < alpha : les variable ne son pas indépendente, il est donc intérésent de fair un teste de corrélation ou de regretion linéaire simple
+
+### student car on pert de l'information avec le X2
+t.test(salaire~statut)
 
 # On modifie la forme du statut en liste booleen
 statutNombre <- c()
@@ -101,7 +107,7 @@ statutNombre0 <- statutNombre[-5]
 # 1 1 1 1 0 0 0 0 0
 ```
 
-1. Répéter l'analyse en ecartant les valeur jugées trop extremes. Qu'observeton ?
+3. Répéter l'analyse en ecartant les valeur jugées trop extremes. Qu'observeton ?
 
 ```R
 result0=lm(salaire0~statutNombre0)
