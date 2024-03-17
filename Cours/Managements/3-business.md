@@ -9,14 +9,16 @@ Il à donc besion d'un plan structurer pour l'esplication
     - [Client](#client)
   - [Model d'affaires](#model-daffaires)
     - [Strategie](#strategie)
-      - [Déstruction créatice](#déstruction-créatice)
-      - [type de distinction](#type-de-distinction)
-      - [methode recherche](#methode-recherche)
+      - [Déstruction Créatice](#déstruction-créatice)
+      - [Distinction](#distinction)
+      - [Recherche](#recherche)
+      - [Evaluer](#evaluer)
     - [Presentation Canva](#presentation-canva)
   - [Plan](#plan)
   - [Financier](#financier)
 - [Annex](#annex)
-  - [Cas](#cas)
+  - [Exemple](#exemple)
+    - [Business inovant](#business-inovant)
     - [Librairie](#librairie)
   - [Remerciment](#remerciment)
 
@@ -61,53 +63,44 @@ On cherche à construire nouvel ***courbe de valeur*** pour certain atribue.
 ***Remettre en cause*** la logique dominate sur les valeurs ou l'archictecture et ***anticiper*** les affiliations tecnologies.
 On peut identifier le **besoin fondamental** (laten, non exprimé) qui peut faire prendre conscience de la sophication actuel inutile.
 
-3-STRATEGIE
-POINT MORT
-AVT COCURT
-impacte tech
+#### Déstruction Créatice
 
-#### Déstruction créatice
+Création de ***nouveaux*** moyen mis à son profit de nouvelle regle du jeu détruisant l'odre établie lui donant un ***monopole de profi***, c'est l'approche Schumpetérienne
+Elles peuvent etre facillement copier mais permet de prendre de l'avance qui peut etre ***mintenue***
 
-création de ***nouveaux*** moyen mis à son profit de nouvelle regle du jeu détruisant l'odre établie lui donant un ***monopole de profi***, c'est l'approche Schumpetérienne
-elle peuvent etre facillement copier mais permet de prendre de l'avence qui peut etre ***mintenue***
+#### Distinction
 
-#### type de distinction
+Une distincion peut aussi etre utilisé pour ***reduir les couts*** et amplifier l'achitecture de ***valeur***.
 
 - Inovation : une question de technologie
-  - incremental : inovation du au progres naturel
-  - radial : modifie profondément les réferences
+  - **incremental** : inovation du au progres ***naturel***
+  - **radial** : modifie ***profondément*** les réferences
 - Strategique :
-  - Continuité : nouvel proposition en lien.
-  - Disruptive : destabiliser le marcher par une ofre plus accécible et facile 
+  - **Continuité** : nouvel proposition en lien pour ***renforcer*** le model.
+  - **Disruptive** : ***destabiliser*** le marcher par une ofre plus accécible et facile par un nouveau model
 
-```mermaid
-%%{init:{'theme':'dark'}}%%
-quadrantChart
-    x-axis Petit --> "Grand chagement"
-    y-axis Strategique --> Technologie
-    quadrant-1 Radical
-    quadrant-2 Incrementale
-    quadrant-3 Continuite
-    quadrant-4 Disruptive
-```
+#### Recherche
 
-#### methode recherche
+les facteur compétitive
 
-l'Inovation peut aussi etre utilisé pour reduir les couts et amplifier l'achitecture de valeur.
-Une inovation est pas necessairement un succé.
+- **Techno push** : endogénes et radical ; théorie des ressources par les ingénieurs
+- **Market pull** : exogenes et latent ; strategie marketing basé sur le retour clients.
+
+a
 
 - **renforcer ou crée** : se qui peut etre valoriser
 - **reduir ou éliminer** : pour baisser les couts se qui peut pas etre valoriser
 - **combiner** : pour consevoir une troisieme
 - **optimiser** : reduir l'efford
 
-> Exemple de type de business inovant
->
->- Freenium : il devien payent
->- Gratuité : utilisateur n'est pas le payer
->- Low coste : trop peut tuer le marcher dû au bénéfice client trop faible
->- Platforme : mettre enrelation
->- Vert :
+#### Evaluer
+
+Les distinctions n'est pas necessairement un succé. il faut donc évaluer son potentielle à attirer les non consomateurs de l'offre de référance.
+
+- Pourqoi l'offre de référance est inaccessible.
+- L'offre de référence est-elle déjà meilleur qu'il ne faut.
+- L'innovation cible t'elle des consomateur potentiel
+- Que permet l'inovation d'autre que l'offre de référence
 
 ### Presentation Canva
 
@@ -172,7 +165,15 @@ EFFET DE LEVIER
 
 # Annex
 
-## Cas
+## Exemple
+
+### Business inovant
+
+- Freenium : il devien payent
+- Gratuité : utilisateur n'est pas le payer
+- Low coste : trop peut tuer le marcher dû au bénéfice client trop faible
+- Platforme : mettre enrelation par des réseaux de communication
+- Vert :
 
 ### Librairie
 
