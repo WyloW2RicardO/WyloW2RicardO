@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
   - [L'entreprise](#lentreprise)
+    - [Corp](#corp)
   - [Activités](#activités)
     - [Groupe](#groupe)
     - [Parties prenantes (stakeholders)](#parties-prenantes-stakeholders)
@@ -12,6 +13,8 @@
   - [Remerciment](#remerciment)
 
 ## L'entreprise
+
+### Corp
 
 - **Mission** : Elle renseigne sur sa raison d’être fondamentale (aspiration), sa place dans son écosystème et sa spécificité.
 Pour qui, pourquoi, sa promesse.

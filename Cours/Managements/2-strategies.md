@@ -216,13 +216,16 @@ quadrantChart
 
 ## Choix
 
-Sur un marché très concurrentiel, il faut prendre en compte les interactions entre compétiteurs et parfois choisir entre compétition et coopération.
 Comment croître et assurer sa pérennité ?
+
+- **stratégie de croissance** : étudie comment l’entreprise peut se développer dans d’autres ***directions*** (produits, marchés) et par quels moyens et méthodes.
+Création de synergie entre les activités
+
+- **stratégie concurrentielle** : étudie comment l’entreprise se positionne par rapport à ses concurrents sur ***un marché donné***.
 
 ### Concurence
 
-La **stratégie concurrentielle** [business strategy]
-étudie comment l’entreprise se positionne par rapport à ses concurrents sur ***un marché donné***.
+Sur un marché très concurrentiel, il faut prendre en compte les interactions entre compétiteurs et parfois choisir entre ***compétition et coopération***.
 Comment être compétitif sur mon marcher ?
 
 #### 3 type de domination
@@ -282,7 +285,6 @@ Il y a équilibre lorsqu’aucun des joueurs ***ne regrette*** son choix. L’é
 
 ### Croissance
 
-La **stratégie de croissance** [corporate strategy] étudie comment l’entreprise peut se développer dans d’autres ***directions*** (produits, marchés) et par quels moyens et méthodes.
 
 #### Voie
 
