@@ -35,8 +35,16 @@ Hiérarchiser et Séléctioné les plus pertinantes.
     - [Croissance](#croissance)
       - [Voie](#voie)
         - [Matrice d'Ansoff](#matrice-dansoff)
+        - [Internationalisation](#internationalisation)
+        - [Integration](#integration)
       - [Mode](#mode)
+        - [Intreprenariat](#intreprenariat)
+        - [Acquisitions](#acquisitions)
       - [Porteufeuil d'activité](#porteufeuil-dactivité)
+        - [Matrice BCG](#matrice-bcg)
+        - [Matrice ADL](#matrice-adl)
+        - [Matrce Mckinsey](#matrce-mckinsey)
+        - [Aventage](#aventage)
   - [Plan](#plan)
     - [Performance](#performance)
     - [Evaluer](#evaluer)
@@ -285,43 +293,231 @@ Il y a équilibre lorsqu’aucun des joueurs ***ne regrette*** son choix. L’é
 
 ### Croissance
 
+quelles [groupe d'activité](1-introduction.md#groupe) l’entreprise doit-elle se développer ?
+dévloppé de nouveaux produit ou marché
+faire de façon interne ou extene
+géré un portefeuille d'activité
 
 #### Voie
 
-diversification question en croissance critique en maturité ou déclin
+La **Spécialisation** : en [phase](#cycle-de-vie) d'***eclosion ou croissance***.
+La **Diversification** : en phase de ***maturité ou déclin***
+
+- Nouveaux **produit** :  vente de nouveaux produit pour ses prospet actuel par la ***complémentarité***.
+  - Aventage
+    - Connaissance des marchés et des clients
+    - Acquisition de nouvelles compétences
+    - Synergies avec produits existants
+    - Gestion de cycles de vie produits dissociés
+    - Retours d’expérience utilisables pour les produits et services existants
+    - Effets d’échelle
+  - Inconvenients
+    - Coûts de développement élevés
+    - Risques projets
+    - Compétences difficiles à acquérir
+    - Facteurs clés de succès différents
+    - Confrontation avec de nouveaux concurrents
+    - Gestion et organisation plus complexe
+    - Changement de culture
+- Nouveaux **marchés** : trouver aux produits de ***nouveaux usages et d’utilisateurs*** par une extension géographique. L’entreprise doit apprendreà se familiariser d’autres ***cultures***.
+  - Aventage
+    - Maîtrise des produits et services
+    - Acquisition de nouveaux savoirs marchés
+    - “Tête de pont” pour d’autres produits
+    - Retours d’expérience utilisables pour les marchés existants, enrichissement culturel
+    - Répartition des risques marchés / pays
+    - Effets d’échelle
+  - Inconvenients
+    - Coûts d’implantation élevés
+    - Différences clés de succès, culturelles, politiques, légales,...
+    - Nouveaux et enciens concurrents
+    - coordination plus complexe
 
 ##### Matrice d'Ansoff
 
-possibilité possible d'une entreprise
-obsolesence : suptitution 
-newProdinov2 : 
-  conai marcher : abitude du marcher
-  synergi : produit nonconpletement diferent
-  retour pour les encien produire
-abitude conso
-integration : faire se que l'on veut, contrebaliser les force fourniseur
+```mermaid
+%%{init:{'theme':'dark'}}%%
+quadrantChart
+    x-axis Produit Actuel --> Nouveaux
+    y-axis Marcher Actuel --> Nouveaux
+    quadrant-1 "Diversification non reliée"
+    quadrant-2 "Développement de marché"
+    quadrant-3 "Pénétration de marché"
+    quadrant-4 "Développement de produit"
+```
+
+> - Pénétration de marché : vente de produit exitant pour ses prospet actuel ; on vise à acroire les ventes en fidélisant les clients pour augmenté sa part de marcher.
+>   - Aventage
+>     - capasiter déjà en place
+>     - mise ne oeuvre rapide
+>     - effet d'experience
+>     - pouvoir accru sur acheteur et fourniseur
+>     - risque connus et limité
+>     - pas de cout dvpt produit
+>   - Inconvenients
+>     - obsoléscent des produits
+>     - Durcissement de la concurrence
+>     - Baisse des prix et de la rentabilité
+>     - Étroitesse ou baisse du marché
+>     - Pas d’acquisition de nouvelles compétences
+>     - regulation
+
+##### Internationalisation
+
+La recherche d’économies d’échelle, de coûts de production locaux plus faibles, ou de volumes de vente plus importants du besoins clients similaires à ceux du pays d’origine est également une motivation pour  internationaliser ses activités.
+
+- **Export** : Expédie ses produits depuis son pays et utilise un réseau de distribution local.
+- **License / Franchise** : accord contractuel permettant à un  partenaire local d’utiliser la technologie / la marque.
+- **Joint venture** : l’entreprise et un partenaire local sont co-actionnaires.
+- **Filiale** : création ou rachat d’une entité locale détenue à 100% par  l’entreprise.
+
+##### Integration
+
+Une voie de diversification stratégique consiste à intégrer des activités appartenant à la ***même chaîne de valeur***.
+
+- Vertical :
+  - Aventage
+    - Connaissance du secteur d’activité
+    - Connaissance des clients finaux
+    - Augmentation de la valeur ajoutée
+    - Pouvoir accru sur les acheteurs ou fournisseurs restants (contrebaliser les forces)
+    - Sécurité de l’approvisionnement (amont) ou de la distribution (aval)
+    - Cible connue
+    - Préssion sur les concurents
+  - Inconvenients
+    - Différents facteurs clés de succès
+    - Compétences et ressources requises différentes
+    - Rétorsion de la part des clients ou fournisseurs concurrencés
+    - Perte de clients et/ou fournisseurs
+    - Concentration du risque marché
+    - Rentabilité des activités amont / aval potentiellement plus faiblexe
+- Horisontal
+  - Aventage
+    - Compétences et ressources requises proches, synergies et effets d’échelle
+    - Technologies croisées  Pouvoir accru sur fournisseurs si synergies achats entre activités
+    - Acquisition de nouveaux clients
+    - Repartition du risque
+  - Inconvenients
+    - Diférent clés de succès, client et secteur d'activité
+    - Dilution des ressource
+    - Compléxité suplémentaire
+    - Nouveaux concurent
 
 #### Mode
 
-interne moin risquer car arret voulu
-externe : dressing regar dessente de l'investisement
+L’entreprise peut décider de compter sur ses ***capacités actuelles*** en les développant et ainsi choisir la croissance interne ou la croissance externe et ***acquérir*** de nouvelles ressources et compétences.
+
+##### Intreprenariat
+
+- avantages
+  - Coût initial plus faible
+  - Investissement plus régulier
+  - Recul ou abandon plus facile
+  - Apprentissage et expérience
+  - Fort outil de motivation...si réussi !
+  - Indépendance conservée
+  - Décision rapide, processus maîtrisé (arret possible)
+- inconvénients
+  - Résultats plus longs à obtenir
+  - Effort pour recréer la chaîne de valeur
+  - Peut revenir plus cher à long terme
+  - Dilution des ressources existantes
+  - Peu adapté aux changements radicaux
+  - Désorganisation et démotivation si échec ou stagnation
+  - Risque de l’entre-soi
+
+##### Acquisitions
+
+- avantages
+  - Economies d’échelle potentielles (synergies et redondances)
+  - Bénéfice immédiat de la position marché existante de la cible
+  - Résultats réels connus et tangibles
+  - Acquisition de technologies de rupture, de compétences rares
+  - Echanges de bonnes pratiques
+- inconvénients
+  - Fonds nécessaires importants
+  - Soumis à l’acceptation de la cible
+  - Processus d’acquisition long et incertain
+  - Peut être soumis à accord des autorités
+  - Cultures d’entreprise différentes
+  - Historique de concurrence avec cible
+  - Risques sociaux
+  - Difficultés d’intégration
+  - Dilution de valeur
 
 #### Porteufeuil d'activité
 
-la presance dans different activité arbitrege
-croissance comparé a la croissance moyenne du marcher
-part parapor au lider du marcher
-cercle vertueu
+Prendre des décisions stratégiques concernant l’***allocation des ressources***, le renforcement, le désengagement ou la cession de chaque DAS (Domaine d’Activité Stratégique).
 
-adl
-naturl : etape positive du marcher
-declin peut etre interser les dominant
+##### Matrice BCG
 
-mackinsey ~~ BDG
-plus large
+Determiner l'attractivité et l'équilibre d'un portefeuille d'activité
 
-parental : facilité de gerer
+- **Croissance du marché** (abscisse) : par rapport à la ***croissance économique moyenne*** ou le degré de maturité de l’industrie.
+- **Part de marché relative** (ordonnée) : part de marché de l’entreprise sur le concurrent principal
+- **Poids du DAS** dans le CA de l’entreprise en % (taille de la bulle)
 
+```mermaid
+%%{init:{'theme':'dark'}}%%
+block-beta columns 2
+A["VACHE A LAIT :
+- revenue fort
+- perspective faible
+- besoin faible
+=> finace dilemme & star"]
+B["STAR :
+- revenue fort
+- perspective fort
+- besoin fort
+=> à finance"]
+C["POID MORT :
+- revenue faible
+- perspective faible
+- besoin fort
+=> OUT"]
+D["DILEMME :
+- revenue faible
+- perspective fort
+- besoin fort
+=> OUT ou finace star"]
+```
+
+Ainsi les "vache à lait" qui gener l'argent de magner efficient permet de finacer les "dilemmes" pour qu'il devient des "stars" qui à long terme deviendra des vache à lait. Les ***risques*** financiers, sectoriels
+et concurrentiels sont ***minimisés*** et répartis. (cercle vertueu)
+
+##### Matrice ADL
+
+Matrice dynamique qui intègre le ***cycle de vie*** du secteur d’activité. Selon la ***phase de maturité*** du secteur et la position concurrentielle du DAS, chaque DAS peut se trouver dans une des 3 zones stratégiques.
+
+- **Naturel** : Le DAS est en bonne position concurrentielle et a des perspectives de marché prometteuses.
+L’entreprise doit accompagner son développement.
+- **Sélection** : L’entreprise doit choisir entre les différents DAS les plus prometteurs et investir pour améliorer leur rentabilité.
+- **Abandon** : L’entreprise doit désinvestir ou céder les DAS de cette zone.
+
+##### Matrce Mckinsey
+
+Permet d’aller ***plus loin que la BCG*** en diversifiant les critères, selon l'attrait et ses atouts.
+
+- **Attrait de l’activité**
+  - Taille et taux de croissance du marché
+  - Rentabilité du secteur
+  - [Intensité concurrentielle](#6-force-de-porteur)
+  - [Risques et opportunités](#externe)
+- **Atouts de l’entreprise**
+  - Qualité des produits et services
+  - [Capacité distinctives](#capacité)
+  - [Forces et Faiblesses](#interne)
+
+##### Aventage
+
+- Un portefeuille **équilibré** est situation favorable pour l’entreprise pour prendre des décisions stratégiques.
+- L’entreprise **diversifiée** doit gérer plusieurs activités pas nécessairement reliées entre elles.
+- La **holding** peut apporter de la valeur à l’ensemble en :
+  - fournissant la ***vision*** et la ***stratégie***
+  - facilitant les ***synergies*** entre activités
+  - développant les compétences des ***managers***
+  - offrant des ***services centraux***, des ressources artagées, du conseil interne
+  - contrôlant la ***performance*** des activités et prenant les actions correctives si nécessaires.
 
 ## Plan
 
