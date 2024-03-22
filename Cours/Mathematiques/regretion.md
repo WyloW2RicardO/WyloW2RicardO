@@ -2,12 +2,16 @@
 
 - [Régrétions](#régrétions)
   - [adequation modele linéaire](#adequation-modele-linéaire)
-  - [variable qualitatives](#variable-qualitatives)
-- [Annex](#annex)
-  - [Exo](#exo)
-    - [Simple](#simple)
-    - [Multipbe](#multipbe)
-  - [Remerciment](#remerciment)
+    - [variable qualitatives](#variable-qualitatives)
+  - [Detection point atypique](#detection-point-atypique)
+    - [Action](#action)
+    - [Methode](#methode)
+  - [Annex](#annex)
+    - [Exo](#exo)
+      - [Simple](#simple)
+      - [Multipbe](#multipbe)
+      - [Quantitative](#quantitative)
+    - [Remerciment](#remerciment)
 
 ## adequation modele linéaire
 
@@ -24,21 +28,43 @@ La régretion linéaire s'appuie sur un certain nombre d'hypotese théorique qui
 iregularité residus : les residus ne doit pa etre corrélé (Durbin-Watsn non sinificatif)
 test de normalité( p<$\alpha$ non normal) : test prent la tete sur de petit détaille pour n grand et ne permet pas de determiner n petit. ne pas cumuler les erreur
 
-## variable qualitatives
+### variable qualitatives
 
 - **Binair** : on peut utiliser les code insee, la regretion est equivalent au teste de student
 - **non binair** : prent p-1 variable binaire dite indicatrice indisosiable (tout ou rien)
 
-detection point abérant
+## Detection point atypique
+
+### Action
+
+- supretion : on le dit sur un criter en amont mais le model devient moin rebuste
+- garde : model plus rebuste
+- double : avec les deux anlyse on peut observe l'impacte
+- modifie : 
+  - transformation de tout le monde par une fonction
+  - windsorising : prenne le max de l'interval choisie
+
+### Methode
+
+- **Univarier** : Sur un petit nombre observation 
+  - alors tout valeur qui n'apartien pas $[\mu +- 3\sigma]$ sont atypique mais elles est dépant des extremes ; si distribution normale alor 99.7% sont incluse dans l'interval
+  - **Innerfence** : hor de la boite à moustache $[Q1 - 1.5 IQ ; Q3 + 1.5 IQ]$, regle moin restrictive et insensible valeur extremes
+  - outfence
+- **Multivarier** : couple de valeur normal devient atypique
+  - **levier** : indique influence de l'observation par la distance de makalanobis $\in [O;1]$ ; si $h>\frac{p+1}{n}$ est anormale
+  - Résidu standardisé : normalise les residus avec ecartype de 1 pour la comparer avec la regretion si on ne l'avias pas pris
+  - residu studentisé : on fait la regretion sur le point retiré ; pour n grand et $\alpha=5%$ |t_i|>2 (3 ou 3.5)  est anormale
+  - distance de cooks : comparaison de tout les residus entre avec ou sans le point retirer ; d_i>4/(n-p-1)>1 est anormal
+
 Comparaison de modeles
-cas deslongitudinale (temps)
+cas des longitudinale (temps)
 Genéral Linéair Model
 
-# Annex
+## Annex
 
-## Exo
+### Exo
 
-### Simple
+#### Simple
 
 On s'intéresse à un échantillon de 10 salarier d'une entreprise.
 On veutle lien entre le salaire et le statut cadre
@@ -169,7 +195,7 @@ statut <- c("cadre","cadre","cadre","cadre","cadre","non-cadre","non-cadre","non
   ### salaireNonCadre = 22.6 + 0
   ```
 
-### Multipbe
+#### Multipbe
 
 ```R
 install.packages("readxl") # Telechargement
@@ -208,6 +234,51 @@ result1 <- lm(Conso~Puissance0+Poids0) # regretion
 summary(result1)
 ```
 
-## Remerciment
+#### Quantitative
+
+On s'intéresse au poid des bébé rats selon 3groupe
+1:control 2:reduit 3:reduit avec complémantaire
+```R
+Poid <- c(4.8,4.2,5.6,5.1,5.3,5.9,5.8,6.1,6,5.4,6.2,5.7,5.7,5.6,6.4,6.8,6,5.5)
+Group <- c(1,1,1,1,1,1,2,2,2,2,2,2,3,3,3,3,3,3)
+
+```
+
+1. Calculer les moyenne et l'ecartype pour chaque groupe
+
+```R
+tapply(Poid,Group,mean)
+#        1        2        3 
+# 5.150000 5.866667 6.000000 
+tapply(Poid,Group,sd)
+#         1         2         3 
+# 0.6024948 0.2943920 0.5099020 
+```
+
+2. Créer 2 varible indicatrices binaire pour présenter la varible group
+
+```R
+G2 <- as.factor(ifelse(Group==2,1,0))
+G3 <- as.factor(ifelse(Group==3,1,0))
+```
+
+3. Efectuer une regrtion linéaire
+
+```R
+medel <- lm(Poid~factor(group))
+sumary(model)
+
+```
+
+4. Conclure
+
+on ne compar que paraport au groupe de control
+```R
+
+
+```
+
+### Remerciment
+
 Je remarci VICTIRIEN Marcahd Professeur à l'IA School en 2024 pour son cour regrétion et R
 <!-- crée par WyloW2RicardO le 2024-03-10 -->
