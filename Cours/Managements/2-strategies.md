@@ -523,7 +523,25 @@ Permet d’aller ***plus loin que la BCG*** en diversifiant les critères, selon
 
 ### Performance
 
+fond propres : batiment, 
+obsolution : evolution maintenace
+2 petit en cas de panne 
+former pour objectif com pour toucher plus pour augmenter benef
+effort marketing agment vente prod plus marge
+antagoniste, contradictoire reformuler ou verifier
+pas trop ni trop peux pour donné envie car elle peut arriver trop top ou pas du tout
+smart max 1an
+
 ### Evaluer
+
+outil aide désition enrichier les desition
+pertinace croiser les option strategique avec le swot
+acc risk : quelle retenu de l'investisment
+classic "rasionel en tout etat de cause"
+limité : pas tout conetre et jamais rationnel
+donc plusieur limité bier congnitive et diluer les prise de désition
+delibérér "decider d'en haut"
+emergent : utile ou nécésaire
 
 <!-- peut-etre à deplace -->
 #### Prévition
@@ -534,9 +552,9 @@ Permet d’aller ***plus loin que la BCG*** en diversifiant les critères, selon
 - Développer un récit cohérent à partir d’hypothèses contradictoires en phase avec les mega-tendances [megatrends], identifier les points d’inflexion et leur probabiliter sur le longt terme.
 - Confronter régulièrement les scénarios aux développements réels.
 
-# Annex
+## Annex
 
-## Remerciment
+### Remerciment
 
 Je remarci SIMON Nicolas Professeur à l'IA School en 2024 pour son cour d'introduction au strategie de developpement d'entreprise
 <!-- crée par WyloW2RicardO le 2024-03-10 -->
